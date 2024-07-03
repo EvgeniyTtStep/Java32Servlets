@@ -12,8 +12,6 @@
     <title>Title</title>
 </head>
 <body>
-
-<c:out value="&{}"></c:out>
-
+<h2>Res: <% out.println(request.getAttribute("res"));%></h2>
 </body>
 </html>
