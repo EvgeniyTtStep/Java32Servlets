@@ -18,8 +18,8 @@
 <p>Car name: <% out.println(request.getAttribute("name")); %></p>
 <p>Vendor: <%= request.getAttribute("vendor") %>
 </p>
-<p>Description: <%= request.getAttribute("desc")%>
-</p>
+<p>Description: <%= request.getAttribute("desc")%></p>
+
 
 <h2>Car object</h2>
 
@@ -29,7 +29,7 @@
 
 <p>Car name: <% out.println(((Car) request.getAttribute("car")).getName()); %></p>
 <p>Vendor: <%= car.getVendor() %></p>
-<p>Description: ${car.desc} </p>
+<p>Description: <%= car.getDescription() %> </p>
 
 
 </body>

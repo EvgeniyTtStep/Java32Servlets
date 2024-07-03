@@ -19,9 +19,9 @@ public class MyServlet extends HttpServlet {
 
         Car car = new Car(name, vendor, desc);
 
-//        request.setAttribute("name", name);
-//        request.setAttribute("vendor", vendor);
-//        request.setAttribute("desc", desc);
+        request.setAttribute("name", name);
+        request.setAttribute("vendor", vendor);
+        request.setAttribute("desc", desc);
 
         request.setAttribute("car", car);
 

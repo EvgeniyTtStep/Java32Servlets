@@ -4,14 +4,26 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+
   <servlet>
     <servlet-name>MyServlet</servlet-name>
     <servlet-class>servlets.MyServlet</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>SessionServlet</servlet-name>
+    <servlet-class>servlets.SessionServlet</servlet-class>
+  </servlet>
+
   <servlet-mapping>
     <servlet-name>MyServlet</servlet-name>
     <url-pattern>/home</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>SessionServlet</servlet-name>
+    <url-pattern>/session</url-pattern>
   </servlet-mapping>
 
 </web-app>
